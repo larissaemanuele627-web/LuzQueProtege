@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luz que Protege</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+            <h2>Luz que Protege</h2>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#problema">O problema</a></li>
+                <li><a href="#diagnostico">Diagnóstico</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="inicio">
+
+            <div class="conteudo-inicio">
+                <span class="destaque">PROTEÇÃO DA VIDA MARINHA</span>
+
+                <h1>Uma luz consciente pode proteger vidas.</h1>
+
+                <p>
+                    Pequenas mudanças na iluminação podem fazer
+                    a diferença para a preservação das tartarugas marinhas.
+                </p>
+
+                <a href="#problema" class="botao">
+                    Conheça o projeto
+                </a>
+            </div>
+
+        </section>
+
+        <!-- SOBRE O PROBLEMA -->
+        <section id="problema" class="secao problema">
+
+            <div class="texto-problema">
+                <span class="subtitulo">ENTENDA O IMPACTO</span>
+
+                <h2>Quando a iluminação se torna um perigo?</h2>
+
+                <p>
+                    A iluminação artificial próxima às praias pode
+                    prejudicar a orientação das tartarugas marinhas.
+                    Esse problema é conhecido como poluição luminosa.
+                </p>
+
+                <p>
+                    Os filhotes utilizam a luminosidade natural do
+                    horizonte para encontrar o caminho até o mar.
+                    Luzes artificiais podem confundir esse percurso.
+                </p>
+
+                <a href="#diagnostico" class="link-secao">
+                    Descubra como ajudar →
+                </a>
+            </div>
+
+            <div class="caixa-informacao">
+                <h3>Você sabia?</h3>
+
+                <p>
+                    A iluminação inadequada pode atrapalhar tanto
+                    os filhotes quanto as tartarugas adultas.
+                </p>
+
+                <p>
+                    Por isso, cuidar da iluminação também é uma
+                    forma de proteger a natureza.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- DIAGNÓSTICO -->
+        <section id="diagnostico" class="secao">
+
+            <span class="subtitulo">FAÇA SUA PARTE</span>
+
+            <h2>Diagnóstico de iluminação</h2>
+
+            <p>
+                Responda às perguntas para receber orientações
+                sobre a iluminação do seu ambiente.
+            </p>
+
+            <form id="formDiagnostico">
+
+                <label for="tipoAmbiente">
+                    Qual é o seu tipo de ambiente?
+                </label>
+
+                <select id="tipoAmbiente" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="residencia">Residência</option>
+                    <option value="comercio">Comércio ou hotel</option>
+                </select>
+
+                <label for="luzPraia">
+                    A iluminação fica direcionada para a praia?
+                </label>
+
+                <select id="luzPraia" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                    <option value="nao-sei">Não sei informar</option>
+                </select>
+
+                <label for="luzForte">
+                    A iluminação é muito forte durante a noite?
+                </label>
+
+                <select id="luzForte" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                    <option value="nao-sei">Não sei informar</option>
+                </select>
+
+                <button type="submit">Ver orientações</button>
+
+                <p id="resultadoDiagnostico" aria-live="polite"></p>
+
+            </form>
+
+            <p class="observacao">
+                Este diagnóstico é educativo e não substitui
+                uma avaliação técnica de iluminação.
+            </p>
+
+        </section>
+
+        <!-- SIMULADOR -->
+        <section id="simulador" class="secao simulador">
+
+            <span class="subtitulo">APRENDA NA PRÁTICA</span>
+
+            <h2>Simulador de iluminação</h2>
+
+            <p>
+                Observe como diferentes tipos de iluminação
+                podem afetar uma área próxima à praia.
+            </p>
+
+            <div class="comparacao">
+
+                <div class="cartao-luz luz-inadequada">
+                    <h3>Iluminação inadequada</h3>
+
+                    <p>
+                        Luz direcionada para a praia e excesso
+                        de iluminação durante a noite.
+                    </p>
+
+                    <span class="estado-luz">Exemplo a evitar</span>
+                </div>
+
+                <div class="cartao-luz luz-adequada">
+                    <h3>Iluminação consciente</h3>
+
+                    <p>
+                        Luz direcionada para baixo, protegida
+                        e utilizada somente quando necessário.
+                    </p>
+
+                    <span class="estado-luz">Exemplo recomendado</span>
+                </div>
+
+            </div>
+
+            <p id="textoSimulador" aria-live="polite">
+                Escolha uma opção para conhecer seus efeitos.
+            </p>
+
+            <div class="botoes-simulador">
+                <button type="button" id="botaoInadequado">
+                    Ver iluminação inadequada
+                </button>
+
+                <button type="button" id="botaoAdequado">
+                    Ver iluminação consciente
+                </button>
+            </div>
+
+        </section>
+
+        <!-- PLANO DE PROTEÇÃO -->
+        <section id="protecao" class="secao">
+
+            <span class="subtitulo">PEQUENAS ATITUDES</span>
+
+            <h2>Como podemos ajudar?</h2>
+
+            <p>
+                Algumas atitudes simples ajudam a diminuir
+                os impactos da iluminação nas praias.
+            </p>
+
+            <div class="lista-protecao">
+
+                <label>
+                    <input type="checkbox" class="itemProtecao">
+                    Evitar luzes direcionadas para a praia.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="itemProtecao">
+                    Utilizar iluminação somente quando necessário.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="itemProtecao">
+                    Preferir luminárias protegidas e direcionadas para baixo.
+                </label>
+
+                <label>
+                    <input type="checkbox" class="itemProtecao">
+                    Compartilhar informações sobre a proteção das tartarugas.
+                </label>
+
+            </div>
+
+            <p id="progressoProtecao" aria-live="polite">
+                Você ainda não marcou nenhuma atitude.
+            </p>
+
+        </section>
+
+        <!-- QUIZ -->
+        <section id="quiz" class="secao">
+
+            <span class="subtitulo">TESTE SEUS CONHECIMENTOS</span>
+
+            <h2>Quiz ambiental</h2>
+
+            <p>
+                Responda às perguntas e descubra quanto você
+                sabe sobre a poluição luminosa.
+            </p>
+
+            <form id="formQuiz">
+
+                <div class="pergunta">
+                    <h3>1. O que é poluição luminosa?</h3>
+
+                    <label>
+                        <input type="radio" name="pergunta1" value="a">
+                        Excesso ou uso inadequado de luz artificial.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pergunta1" value="b">
+                        Poluição causada pelo lixo nas praias.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pergunta1" value="c">
+                        A iluminação natural da Lua.
+                    </label>
+                </div>
+
+                <div class="pergunta">
+                    <h3>2. Por que a luz artificial pode prejudicar os filhotes?</h3>
+
+                    <label>
+                        <input type="radio" name="pergunta2" value="a">
+                        Porque impede que eles se alimentem.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pergunta2" value="b">
+                        Porque pode confundir sua orientação até o mar.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pergunta2" value="c">
+                        Porque muda a temperatura da água.
+                    </label>
+                </div>
+
+                <div class="pergunta">
+                    <h3>3. Qual atitude ajuda a proteger as tartarugas?</h3>
+
+                    <label>
+                        <input type="radio" name="pergunta3" value="a">
+                        Deixar todas as luzes acesas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pergunta3" value="b">
+                        Direcionar as luzes para a praia.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pergunta3" value="c">
+                        Utilizar iluminação adequada e direcionada.
+                    </label>
+                </div>
+
+                <button type="submit">Finalizar quiz</button>
+
+                <p id="resultadoQuiz" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+        <!-- ORIENTAÇÕES -->
+        <section id="orientacoes" class="secao">
+
+            <span class="subtitulo">CUIDADO COM A VIDA MARINHA</span>
+
+            <h2>Encontrou uma tartaruga ou um ninho?</h2>
+
+            <p>
+                Mantenha distância, não toque no animal e não
+                mexa no ninho. Avise um adulto e procure uma
+                equipe especializada.
+            </p>
+
+            <p>
+                No Rio Grande do Norte, você pode entrar em
+                contato com o projeto MonitoraMar para comunicar
+                ocorrências envolvendo animais marinhos.
+            </p>
+
+            <a href="https://www.cemam.org/monitoramar"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="botao">
+                Conheça o MonitoraMar
+            </a>
+
+        </section>
+
+        <!-- ACESSIBILIDADE -->
+        <section class="secao acessibilidade">
+
+            <h2>Acessibilidade</h2>
+
+            <p>
+                Ajuste a visualização do site de acordo com
+                sua preferência.
+            </p>
+
+            <div class="controles-acessibilidade">
+
+                <button type="button" id="aumentarFonte">
+                    Aumentar fonte
+                </button>
+
+                <button type="button" id="diminuirFonte">
+                    Diminuir fonte
+                </button>
+
+                <button type="button" id="contraste">
+                    Alto contraste
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Luz que Protege</h2>
+
+        <p>
+            Tecnologia em defesa da vida marinha.
+        </p>
+
+        <p>
+            Projeto educativo sobre poluição luminosa
+            e preservação das tartarugas marinhas.
+        </p>
+
+        <p class="rodape-final">
+            Natal - RN | Projeto Integrador
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
